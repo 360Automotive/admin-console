@@ -1,0 +1,25 @@
+@import "./colors.scss";
+
+.button{
+    background-color: $base-yellow;
+    color: $base-black-bg;
+    outline: none;
+    border-radius: 1rem;
+    width: 100%;
+    border: none;
+    &:hover{
+        cursor: pointer;
+    }
+    &-small{
+        height: 2rem;
+    }
+    &-medium{
+        height: 3.5rem;
+    }
+    &-large{
+        height: 5rem;
+        font-weight: 400;
+        font-size: 1.6rem;
+        letter-spacing: .5px;
+    }
+}

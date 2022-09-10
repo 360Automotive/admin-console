@@ -1,0 +1,26 @@
+@import "./colors.scss";
+.typography {
+  color: $base-white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  &-h1 {
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+  }
+  &-h2 {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+  }
+  &-h3 {
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+  }
+  &-h4 {
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+  }
+  &-display{
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+  }
+}

@@ -1,0 +1,8 @@
+@import "../../common/colors.scss";
+
+.status {
+  font-size: 1.6rem;
+  &-Active {
+    color: $status-green;
+  }
+}

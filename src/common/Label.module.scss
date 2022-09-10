@@ -1,0 +1,10 @@
+@import "./colors.scss";
+
+.label{
+    font-size: 1.6rem;
+    color: $base-white ;
+    padding: .9rem 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    letter-spacing: .5px;
+}

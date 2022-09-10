@@ -1,0 +1,21 @@
+@import "../../common/colors.scss";
+
+.snackbar {
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  height: 5rem;
+  width: 32rem;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 6px;
+  transform: translateX(35rem);
+  background-color: $base-snack-color;
+  span {
+    color: $base-white;
+  }
+  div:hover{
+    cursor: pointer;
+  }
+}

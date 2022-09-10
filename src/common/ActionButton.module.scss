@@ -1,0 +1,29 @@
+@import "./colors.scss";
+
+.action{
+    background-color: transparent;
+    height: 3rem;
+    width: 8rem;
+    outline: none;
+    border-radius: 6px;
+    &-cancel{
+        border: 2px solid $status-red;
+        color: $status-red;
+        &:hover{
+            background-color: $status-red;
+            color: $base-white;
+            opacity: .9;
+            cursor: pointer;
+        }
+    }
+    &-approve{
+        border: 2px solid $status-green;
+        color: $status-green;
+        &:hover{
+            background-color: $status-green;
+            color: $base-white;
+            opacity: .9;
+            cursor: pointer;
+        }
+    }
+}

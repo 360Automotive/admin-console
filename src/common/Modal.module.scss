@@ -1,0 +1,77 @@
+@import "./colors.scss";
+
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f2121d6;
+  &-active {
+    display: flex;
+    -webkit-animation: modal-active 0.2s cubic-bezier(0.39, 0.575, 0.565, 1)
+      both;
+    animation: modal-active 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  }
+  &-box {
+    padding: 1rem;
+    height: 15rem;
+    width: 30rem;
+    background-color: $base-black-bg;
+    border-radius: 6px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &-icon:hover{
+      cursor: pointer;
+  }
+}
+
+@-webkit-keyframes modal-active {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: flex;
+  }
+}
+@keyframes modal-active {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: flex;
+  }
+}

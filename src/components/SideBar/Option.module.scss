@@ -1,0 +1,25 @@
+@import "../../common/colors.scss";
+
+.link{
+  text-decoration: none;
+}
+.option {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: transparent;
+  height: 5rem;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-top: .5rem;
+  &:hover {
+    background-color: $base-hover-gray;
+    cursor: pointer;
+  }
+  &-icon {
+    margin-right: 0.5rem;
+  }
+  &-active{
+    background-color: $base-hover-gray;
+  }
+}

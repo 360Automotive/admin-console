@@ -1,0 +1,23 @@
+@import "../../common/colors.scss";
+
+.logout {
+  height: 5rem;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  &:hover {
+    background-color: $base-hover-gray;
+    cursor: pointer;
+  }
+  div{
+      margin-right: 5px;
+  }
+  span{
+      font-size: 1.4rem;
+  }
+}

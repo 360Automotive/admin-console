@@ -1,0 +1,14 @@
+@import "../../common/colors.scss";
+
+.request{
+    display: grid;
+    height: 4rem;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    border-bottom: solid .5px $base-light-grey;
+    &-actions{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}

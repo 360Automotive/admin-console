@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+}
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-right {
+	-webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(35rem);
+            transform: translateX(35rem);
+  }
+  100% {
+    -webkit-transform: translateX(-1rem);
+            transform: translateX(-1rem);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(35rem);
+            transform: translateX(35rem);
+  }
+  100% {
+    -webkit-transform: translateX(-1rem);
+            transform: translateX(-1rem);
+  }
+}
+
+ @-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-1rem);
+            transform: translateX(-1rem);
+  }
+  100% {
+    -webkit-transform: translateX(35rem);
+            transform: translateX(35rem);
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-1rem);
+            transform: translateX(-1rem);
+  }
+  100% {
+    -webkit-transform: translateX(35rem);
+            transform: translateX(35rem);
+  }
+}
